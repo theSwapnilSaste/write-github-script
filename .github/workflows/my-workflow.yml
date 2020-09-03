@@ -17,3 +17,8 @@ jobs:
               repo: context.repo.repo,
               body: "Hello, this is automated Comment!!"
              })
+            github.projects.createCard({
+              column_id: 10685421,
+              content_id: context.payload.issue.id,
+              content_type: "Issue"
+              });
